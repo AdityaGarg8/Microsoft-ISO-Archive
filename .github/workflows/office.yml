@@ -11,9 +11,9 @@ jobs:
       - name: Free up disk space for the CI
         uses: AdityaGarg8/remove-unwanted-software@v3
         with:
-          remove-android: 'true'
-          remove-dotnet: 'true'
-          remove-haskell: 'true'
+          remove-android: 'false'
+          remove-dotnet: 'false'
+          remove-haskell: 'false'
 
       - name: 'Checkout Repo'
         uses: actions/checkout@v4
@@ -37,4 +37,4 @@ jobs:
           tag_name: 2003
           draft: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

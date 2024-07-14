@@ -22,6 +22,7 @@ jobs:
         id: build
         run: |
           wget https://archive.org/download/en_microsoft_office_2003/en_microsoft_office_2003_dvd.iso
+          sha256sum en_microsoft_office_2003_dvd.iso
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4

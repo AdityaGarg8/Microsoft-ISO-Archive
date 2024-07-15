@@ -31,7 +31,6 @@ jobs:
           sudo apt install megatools -y
           megadl https://mega.nz/folder/ryAQTahK#jNXjQ1WQM3gOcymWiCm71Q/folder/3r4SES5D
           wget https://github.com/AdityaGarg8/Office-ISO-Archive/releases/download/Test/en_office_2003_pro.iso
-          mv -v en_microsoft_office_2003_dvd.iso en_office_2003_pro.iso
           wget https://www.smartversion.com/smartvs400_linux_x64.zip
           unzip smartvs400_linux_x64.zip
           for i in *.svf

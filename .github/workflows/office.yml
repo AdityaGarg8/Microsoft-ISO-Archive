@@ -19,6 +19,7 @@ jobs:
           remove-large-packages: 'true'
           remove-cached-tools: 'true'
           remove-swapfile: 'true'
+          verbose: 'true'
 
       - name: 'Checkout Repo'
         uses: actions/checkout@v4

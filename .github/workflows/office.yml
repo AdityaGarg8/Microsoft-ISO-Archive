@@ -4,22 +4,15 @@ name: Get ISO
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
+    inputs:
+      link:
+        description: 'Link'
+        required: false
+        default: '0'
 jobs:
   Get:
     runs-on: ubuntu-24.04
     steps:
-      - name: Free up disk space for the CI
-        uses: AdityaGarg8/remove-unwanted-software@v4.1
-        with:
-          remove-android: 'true'
-          remove-dotnet: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
-          remove-large-packages: 'true'
-          remove-cached-tools: 'true'
-          remove-swapfile: 'true'
-          verbose: 'true'
 
       - name: 'Checkout Repo'
         uses: actions/checkout@v4
@@ -29,7 +22,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install megatools -y
-          megadl https://mega.nz/folder/ryAQTahK#jNXjQ1WQM3gOcymWiCm71Q/file/XmgmWYxI
+          megadl ${{ github.event.inputs.link }}
           wget https://github.com/AdityaGarg8/Office-ISO-Archive/releases/download/Test/en_office_2003_pro.iso
           wget https://www.smartversion.com/smartvs400_linux_x64.zip
           unzip smartvs400_linux_x64.zip

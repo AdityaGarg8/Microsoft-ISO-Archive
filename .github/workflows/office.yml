@@ -9,11 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Free up disk space for the CI
-        uses: AdityaGarg8/remove-unwanted-software@v3
+        uses: AdityaGarg8/remove-unwanted-software@v4
         with:
-          remove-android: 'false'
-          remove-dotnet: 'false'
-          remove-haskell: 'false'
+          remove-android: 'true'
+          remove-dotnet: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
+          remove-large-packages: 'true'
+          remove-cached-tools: 'true'
+          remove-swapfile: 'true'
 
       - name: 'Checkout Repo'
         uses: actions/checkout@v4
@@ -21,20 +26,30 @@ jobs:
       - name: Build script
         id: build
         run: |
-          wget https://archive.org/download/en_microsoft_office_2003/en_microsoft_office_2003_dvd.iso
-          sha256sum en_microsoft_office_2003_dvd.iso
+          sudo apt update
+          sudo apt install megatools -y
+          megadl https://mega.nz/folder/ryAQTahK#jNXjQ1WQM3gOcymWiCm71Q/folder/3r4SES5D
+          curl -O https://github.com/AdityaGarg8/Office-ISO-Archive/releases/download/2003/en_office_2003_pro.iso
+          curl -O https://www.smartversion.com/smartvs400_linux_x64.zip
+          unzip smartvs400_linux_x64.zip
+          for i in *.svf
+          do
+          ./smv x ${i} -br ./
+          done
+          sha256sum *.iso > sha256
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
         with:
           name: office
-          path: ${{ github.workspace }}/*.iso
+          path: ${{ github.workspace }}/sha256
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             ${{ github.workspace }}/*.iso
+            ${{ github.workspace }}/sha256
           tag_name: 2003
           draft: false
         env:

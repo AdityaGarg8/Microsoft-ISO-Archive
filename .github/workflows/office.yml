@@ -37,20 +37,19 @@ jobs:
           do
           ./smv x ${i} -br ./
           done
-          sha256sum *.iso > sha256
+          sha256sum *.iso
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
         with:
           name: office
-          path: ${{ github.workspace }}/sha256
+          path: ${{ github.workspace }}*.iso
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             ${{ github.workspace }}/*.iso
-            ${{ github.workspace }}/sha256
           tag_name: 2003
           draft: false
         env:

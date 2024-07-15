@@ -4,22 +4,6 @@ name: Get ISO
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
-    inputs:
-      link:
-        description: 'Link1'
-        required: true
-      link2:
-        description: 'Link2'
-        required: true
-      link3:
-        description: 'Link3'
-        required: true
-      link4:
-        description: 'Link4'
-        required: true
-      link5:
-        description: 'Link5'
-        required: true
 jobs:
   Get:
     runs-on: ubuntu-24.04
@@ -31,29 +15,20 @@ jobs:
       - name: Build script
         id: build
         run: |
-          sudo apt update
-          sudo apt install megatools -y
-          megadl ${{ github.event.inputs.link }}
-          megadl ${{ github.event.inputs.link2 }}
-          megadl ${{ github.event.inputs.link3 }}
-          megadl ${{ github.event.inputs.link4 }}
-          megadl ${{ github.event.inputs.link5 }}
-          wget https://github.com/AdityaGarg8/Office-ISO-Archive/releases/download/Test/en_office_2003_pro.iso
-          wget https://www.smartversion.com/smartvs400_linux_x64.zip
-          unzip smartvs400_linux_x64.zip
-          for i in *.svf
-          do
-          ./smv x ${i} -br ./
-          done
-          sha256sum *.iso
+          gh release download 2003 -D 2003 -R AdityaGarg8/Office-ISO-Archive
+          cd 2003
+          sha256sum ./*.iso > sha256sum.txt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
         with:
           name: office
-          path: ${{ github.workspace }}*.iso
+          path: ${{ github.workspace }}/2003/sha256sum.txt
 
       - name: Release
+        if: false
         uses: softprops/action-gh-release@v2
         with:
           files: |

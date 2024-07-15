@@ -6,9 +6,14 @@ on:
   workflow_dispatch:
     inputs:
       link:
-        description: 'Link'
-        required: false
-        default: '0'
+        description: 'Link1'
+        required: true
+      link2:
+        description: 'Link2'
+        required: true
+      link3:
+        description: 'Link3'
+        required: true
 jobs:
   Get:
     runs-on: ubuntu-24.04
@@ -23,6 +28,8 @@ jobs:
           sudo apt update
           sudo apt install megatools -y
           megadl ${{ github.event.inputs.link }}
+          megadl ${{ github.event.inputs.link2 }}
+          megadl ${{ github.event.inputs.link3 }}
           wget https://github.com/AdityaGarg8/Office-ISO-Archive/releases/download/Test/en_office_2003_pro.iso
           wget https://www.smartversion.com/smartvs400_linux_x64.zip
           unzip smartvs400_linux_x64.zip

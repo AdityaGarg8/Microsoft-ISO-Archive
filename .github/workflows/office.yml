@@ -30,9 +30,9 @@ jobs:
           sudo apt update
           sudo apt install megatools -y
           megadl https://mega.nz/folder/ryAQTahK#jNXjQ1WQM3gOcymWiCm71Q/folder/3r4SES5D
-          curl -O https://archive.org/download/en_microsoft_office_2003/en_microsoft_office_2003_dvd.iso
+          wget https://archive.org/download/en_microsoft_office_2003/en_microsoft_office_2003_dvd.iso
           mv -v en_microsoft_office_2003_dvd.iso en_office_2003_pro.iso
-          curl -O https://www.smartversion.com/smartvs400_linux_x64.zip
+          wget https://www.smartversion.com/smartvs400_linux_x64.zip
           unzip smartvs400_linux_x64.zip
           for i in *.svf
           do

@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Array of download links
+if [[ $1 = -set1 ]]
+then
 links=(
     "https://drive.massgrave.dev/ar_office_enterprise_2007_united_states_x86_dvd_481411.iso"
     "https://drive.massgrave.dev/bg_office_enterprise_2007_united_states_x86_dvd_481230.iso"
@@ -12,6 +14,10 @@ links=(
     "https://drive.massgrave.dev/en_office_enterprise_2007_united_states_x86_cd_481472.iso"
     "https://drive.massgrave.dev/es_office_enterprise_2007_united_states_x86_dvd_481251.iso"
     "https://drive.massgrave.dev/et_office_enterprise_2007_united_states_x86_dvd_481341.iso"
+)
+elif [[ $1 == -set2 ]]
+then
+links=(
     "https://drive.massgrave.dev/fi_office_enterprise_2007_united_states_x86_dvd_481254.iso"
     "https://drive.massgrave.dev/fr_office_enterprise_2007_united_states_x86_dvd_481261.iso"
     "https://drive.massgrave.dev/he_office_enterprise_2007_united_states_x86_dvd_481475.iso"
@@ -22,6 +28,10 @@ links=(
     "https://drive.massgrave.dev/it_office_enterprise_2007_united_states_x86_dvd_481267.iso"
     "https://drive.massgrave.dev/ja_office_enterprise_2007_united_states_x86_dvd_481470.iso"
     "https://drive.massgrave.dev/kk_office_enterprise_2007_united_states_x86_dvd_481511.iso"
+)
+elif [[ $1 == -set3 ]]
+then
+links=(
     "https://drive.massgrave.dev/ko_office_enterprise_2007_united_states_x86_dvd_481466.iso"
     "https://drive.massgrave.dev/lt_office_enterprise_2007_united_states_x86_dvd_481344.iso"
     "https://drive.massgrave.dev/lv_office_enterprise_2007_united_states_x86_dvd_481342.iso"
@@ -32,6 +42,10 @@ links=(
     "https://drive.massgrave.dev/pt_office_enterprise_2007_united_states_x86_dvd_481327.iso"
     "https://drive.massgrave.dev/ro_office_enterprise_2007_united_states_x86_dvd_481329.iso"
     "https://drive.massgrave.dev/ru_office_enterprise_2007_united_states_x86_dvd_481908.iso"
+)
+elif [[ $1 == -set4 ]]
+then
+links=(
     "https://drive.massgrave.dev/sk_office_enterprise_2007_united_states_x86_dvd_481914.iso"
     "https://drive.massgrave.dev/sl_office_enterprise_2007_united_states_x86_dvd_481340.iso"
     "https://drive.massgrave.dev/sr_office_enterprise_2007_united_states_x86_dvd_481348.iso"
@@ -41,6 +55,7 @@ links=(
     "https://drive.massgrave.dev/tw_office_enterprise_2007_united_states_x86_dvd_481333.iso"
     "https://drive.massgrave.dev/uk_office_enterprise_2007_united_states_x86_dvd_481338.iso"
 )
+fi
 
 # Loop through each link and download using curl
 for link in "${links[@]}"; do

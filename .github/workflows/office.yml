@@ -15,7 +15,7 @@ jobs:
       - name: Build script
         id: build
         run: |
-          bash ./2007.sh -set1
+          bash ./2007.sh -set2
           sha256sum ./*.iso > sha256sum.txt
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

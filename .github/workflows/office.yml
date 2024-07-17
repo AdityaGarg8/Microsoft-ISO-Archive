@@ -31,7 +31,7 @@ jobs:
         with:
           files: |
             ${{ github.workspace }}/*.iso
-          tag_name: 2003
+          tag_name: 2007
           draft: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -15,9 +15,7 @@ jobs:
       - name: Build script
         id: build
         run: |
-          gh release download 2003 -D 2003 -R AdityaGarg8/Office-ISO-Archive
-          cd 2003
-          sha256sum ./*.iso > sha256sum.txt
+          bash ./2007.sh
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

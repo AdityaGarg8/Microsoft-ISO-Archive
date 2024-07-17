@@ -16,6 +16,7 @@ jobs:
         id: build
         run: |
           bash ./2007.sh
+          sha256sum ./*.iso > sha256sum.txt
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -23,10 +24,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: office
-          path: ${{ github.workspace }}/2003/sha256sum.txt
+          path: ${{ github.workspace }}/sha256sum.txt
 
       - name: Release
-        if: false
         uses: softprops/action-gh-release@v2
         with:
           files: |

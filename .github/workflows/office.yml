@@ -4,6 +4,10 @@ name: Get ISO
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
+    inputs:
+      set:
+        description: 'Set number'
+        required: true
 jobs:
   Get:
     runs-on: ubuntu-24.04
@@ -15,7 +19,7 @@ jobs:
       - name: Build script
         id: build
         run: |
-          bash ./2007.sh -set4
+          bash ./2010.sh -set${{ github.event.inputs.set }}
           sha256sum ./*.iso > sha256sum.txt
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -31,7 +35,7 @@ jobs:
         with:
           files: |
             ${{ github.workspace }}/*.iso
-          tag_name: 2007
+          tag_name: 2010
           draft: false
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}

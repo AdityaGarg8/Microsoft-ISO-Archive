@@ -114,4 +114,4 @@ for url in "${urls[@]}"; do
     curl -L -O "$url"
 done
 
-echo "All downloads completed.
+echo "All downloads completed."

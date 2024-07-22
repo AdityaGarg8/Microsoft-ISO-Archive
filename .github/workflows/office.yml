@@ -11,6 +11,7 @@ on:
 jobs:
   Get:
     runs-on: ubuntu-24.04
+    timeout-minutes: 300
     steps:
 
       - name: 'Checkout Repo'

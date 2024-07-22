@@ -107,6 +107,7 @@ urls=(
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Turkish_CORE_MLF_X17-77027.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Ukrainian_CORE_MLF_X17-77103.ISO"
 )
+fi
 
 # Download each URL
 for url in "${urls[@]}"; do

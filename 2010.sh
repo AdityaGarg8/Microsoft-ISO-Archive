@@ -76,36 +76,36 @@ then
 urls=(
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_German_CORE_MLF_X17-76790.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Greek_CORE_MLF_X17-76845.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hebrew_CORE_MLF_X17-76859.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hebrew_CORE_MLF_X17-76859.ISOO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hungarian_CORE_MLF_X17-76873.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Indic_CORE_MLF_X17-77119.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Italian_CORE_MLF_X17-76886.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Japanese_CORE_MLF_X17-76900.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Kazakh_CORE_MLF_X17-77242.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Korean_CORE_MLF_X17-77163.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Latvian_CORE_MLF_X17-77056.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Indic_CORE_MLF_X17-77117.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Italian_CORE_MLF_X17-76887.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Japanese_CORE_MLF_X17-76901.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Kazakh_CORE_MLF_X17-77240.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Korean_CORE_MLF_X17-77164.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Latvian_CORE_MLF_X17-77054.ISO"
 )
 elif [[ $1 == -set7 ]]
 then
 urls=(
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Lithuanian_CORE_MLF_X17-77072.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Lithuanian_CORE_MLF_X17-77070.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Norwegian_CORE_MLF_X17-76914.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Polish_CORE_MLF_X17-76957.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Polish_CORE_MLF_X17-76956.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Portuguese_CORE_MLF_X17-76942.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Romanian_CORE_MLF_X17-77210.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Romanian_CORE_MLF_X17-77209.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Russian_CORE_MLF_X17-76999.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Serbian_Latin_CORE_MLF_X17-77134.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Slovak_CORE_MLF_X17-77226.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Slovenian_CORE_MLF_X17-77180.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Serbian_Latin_CORE_MLF_X17-77133.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Slovak_CORE_MLF_X17-77225.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Slovenian_CORE_MLF_X17-77178.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Spanish_CORE_MLF_X17-76817.ISO"
 )
 elif [[ $1 == -set8 ]]
 then
 urls=(
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Swedish_CORE_MLF_X17-76971.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Thai_CORE_MLF_X17-77012.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Turkish_CORE_MLF_X17-77027.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Ukrainian_CORE_MLF_X17-77103.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Thai_CORE_MLF_X17-77013.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Turkish_CORE_MLF_X17-77026.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Ukrainian_CORE_MLF_X17-77101.ISO"
 )
 fi
 

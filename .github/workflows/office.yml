@@ -22,12 +22,12 @@ jobs:
           brew install coreutils || true
           bash ./2010.sh -set${{ github.event.inputs.set }}
           sha256sum ./*.iso > sha256sum.txt || sha256sum ./*.ISO > sha256sum.txt
-          for i in *.iso
+          for i in *.ISO
           do
           gh release upload 2010 $i
           done
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT }}
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4

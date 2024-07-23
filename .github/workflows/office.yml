@@ -35,7 +35,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            ${{ github.workspace }}/*.iso
             ${{ github.workspace }}/*.ISO
           tag_name: 2010
           draft: false

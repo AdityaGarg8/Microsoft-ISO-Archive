@@ -4,10 +4,6 @@ name: Get ISO
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
-    inputs:
-      set:
-        description: 'Set number'
-        required: true
 jobs:
   Get:
     runs-on: ubuntu-latest
@@ -20,11 +16,14 @@ jobs:
         id: build
         run: |
           brew install coreutils || true
-          bash ./2010.sh -set${{ github.event.inputs.set }}
-          sha256sum ./*.iso > sha256sum.txt || sha256sum ./*.ISO > sha256sum.txt
-          for i in *.ISO
+          for i in 1 2 3 4 5 6 7 8
           do
-          gh release upload 2010 $i --clobber
+          bash ./2013.sh -set${i}
+          for i in *.iso
+          do
+          gh release upload 2013 $i --clobber
+          done
+          rm ./*.iso
           done
         env:
           GH_TOKEN: ${{ secrets.PAT }}
@@ -41,7 +40,7 @@ jobs:
         with:
           files: |
             ${{ github.workspace }}/*.ISO
-          tag_name: 2010
+          tag_name: 2013
           draft: false
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}

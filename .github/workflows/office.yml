@@ -24,7 +24,7 @@ jobs:
           sha256sum ./*.iso > sha256sum.txt || sha256sum ./*.ISO > sha256sum.txt
           for i in *.ISO
           do
-          gh release upload 2010 $i
+          gh release upload 2010 $i --clobber
           done
         env:
           GH_TOKEN: ${{ secrets.PAT }}

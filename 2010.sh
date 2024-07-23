@@ -76,7 +76,7 @@ then
 urls=(
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_German_CORE_MLF_X17-76790.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Greek_CORE_MLF_X17-76845.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hebrew_CORE_MLF_X17-76859.ISOO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hebrew_CORE_MLF_X17-76859.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hungarian_CORE_MLF_X17-76873.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Indic_CORE_MLF_X17-77117.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Italian_CORE_MLF_X17-76887.ISO"

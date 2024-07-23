@@ -74,7 +74,7 @@ urls=(
 elif [[ $1 == -set6 ]]
 then
 urls=(
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_German_CORE_MLF_X17-76789.ISO"
+    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_German_CORE_MLF_X17-76790.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Greek_CORE_MLF_X17-76845.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hebrew_CORE_MLF_X17-76859.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_Hungarian_CORE_MLF_X17-76873.ISO"

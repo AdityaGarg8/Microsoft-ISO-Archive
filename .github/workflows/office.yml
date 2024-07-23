@@ -10,8 +10,7 @@ on:
         required: true
 jobs:
   Get:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 300
+    runs-on: macos-latest
     steps:
 
       - name: 'Checkout Repo'

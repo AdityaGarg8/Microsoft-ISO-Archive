@@ -7,8 +7,8 @@ urls=(
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_Arabic_CORE_MLF_X17-76770.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_Brazilian_CORE_MLF_X17-76728.ISO"
     "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_Bulgarian_CORE_MLF_X17-77158.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_ChnSimp_CORE_MLF_X17-76742.ISO"
-    "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_ChnTrad_CORE_MLF_X17-77048.ISO"
+   # "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_ChnSimp_CORE_MLF_X17-76742.ISO"
+   # "https://drive.massgrave.dev/SW_DVD5_Office_Professional_Plus_2010w_SP1_64Bit_ChnTrad_CORE_MLF_X17-77048.ISO"
 )
 elif [[ $1 == -set2 ]]
 then

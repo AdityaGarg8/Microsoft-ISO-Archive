@@ -19,6 +19,7 @@ jobs:
       - name: Build script
         id: build
         run: |
+          brew install coreutils || true
           bash ./2010.sh -set${{ github.event.inputs.set }}
           sha256sum ./*.iso > sha256sum.txt || sha256sum ./*.ISO > sha256sum.txt
         env:

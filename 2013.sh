@@ -117,7 +117,7 @@ fi
 
 # Download each URL
 for url in "${urls[@]}"; do
-    echo "Downloading $url..."
+    echo "Downloading $url"
     curl -L -O "$url"
 done
 

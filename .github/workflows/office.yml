@@ -18,10 +18,10 @@ jobs:
           brew install coreutils || true
           for i in 1 2 3 4 5 6 7 8
           do
-          bash ./2013.sh -set${i}
+          bash ./2016.sh -set${i}
           for i in *.iso
           do
-          gh release upload 2013 $i --clobber
+          gh release upload 2016 $i --clobber
           done
           rm ./*.iso
           done
@@ -40,7 +40,7 @@ jobs:
         with:
           files: |
             ${{ github.workspace }}/*.ISO
-          tag_name: 2013
+          tag_name: 2016
           draft: false
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
